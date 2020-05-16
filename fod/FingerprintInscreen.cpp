@@ -46,7 +46,7 @@ namespace lineage {
 namespace biometrics {
 namespace fingerprint {
 namespace inscreen {
-namespace V1_0 {
+namespace V1_1 {
 namespace implementation {
 
 /*
@@ -207,8 +207,24 @@ Return<int32_t> FingerprintInscreen::getSize() {
     return i_fodSize;
 }
 
+Return<int32_t> FingerprintInscreen::getHbmOffDelay() {
+    return 0;
+}
+
+Return<int32_t> FingerprintInscreen::getHbmOnDelay() {
+    return 0;
+}
+
+Return<bool> FingerprintInscreen::supportsAlwaysOnHBM() {
+    return false;
+}
+
+Return<void> FingerprintInscreen::switchHbm(bool) {
+    return Void();
+}
+
 }  // namespace implementation
-}  // namespace V1_0
+}  // namespace V1_1
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
