@@ -143,6 +143,11 @@ PRODUCT_PACKAGES += \
     vendor.oneplus.fingerprint.extension@1.0 \
     vendor.oneplus.hardware.display@1.0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fod.pos.x=453 \
+    ro.fod.pos.y=2079 \
+    ro.fod.size=174
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
