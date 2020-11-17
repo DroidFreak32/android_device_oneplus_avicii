@@ -421,6 +421,9 @@ PRODUCT_PACKAGES += \
     libchrome \
     libchrome.vendor
 
+# override  ota assert
+TARGET_OTA_ASSERT_DEVICE := avicii,OnePlusNord
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0:64 \
