@@ -452,6 +452,9 @@ PRODUCT_PACKAGES += \
     libOmxVidcCommon \
     libstagefrighthw
 
+# override  ota assert
+TARGET_OTA_ASSERT_DEVICE := avicii,OnePlusNord
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
