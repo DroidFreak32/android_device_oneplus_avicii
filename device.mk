@@ -337,6 +337,11 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fod.pos.x=453 \
+    ro.fod.pos.y=2079 \
+    ro.fod.size=174
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
