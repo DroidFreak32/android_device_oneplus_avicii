@@ -1078,8 +1078,8 @@ vendor/lib64/libsdm-diag.so
 vendor/lib64/libtinyxml2_1.so
 
 # HotwordEnrollment
--priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
--priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk|1757767b2f29fe85d03d0a185c8f99b0085524f3
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk|7fa8a2f58b9ff48e221cc6c0c4642e74d3081804
 
 # IFAA
 vendor/bin/hw/vendor.oneplus.hardware.ifaa@2.0-service
