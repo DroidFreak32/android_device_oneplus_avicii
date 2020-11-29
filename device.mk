@@ -588,3 +588,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Include gapps
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/gapps/config.mk)
