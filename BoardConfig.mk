@@ -68,6 +68,9 @@ TARGET_BOARD_PLATFORM := lito
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno620
 TARGET_USES_QCOM_BSP := true
 
+# Prebuilt LineageOS Recovery (Fixes sideloading OTA Zips)
+TARGET_PREBUILT_RECOVERY_RAMDISK_CPIO := $(DEVICE_PATH)/ramdisk-recovery.cpio
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
@@ -103,7 +106,8 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 # Dex
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
+#    WITH_DEXPREOPT ?= true
+     WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
   endif
 endif
 
