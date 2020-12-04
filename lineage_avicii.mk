@@ -38,3 +38,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="Nord-user 10 QKQ1.200412.002 2010231954 release-keys"
 
 BUILD_FINGERPRINT := "OnePlus/Nord/Nord:10/QKQ1.200412.002/2010231954:user/release-keys"
+
+# Unofficial build ID
+TARGET_UNOFFICIAL_BUILD_ID := DroidFreak32
+
+WITH_CUSTOM_LAUNCHER := NovaLauncher
+WITH_SHISHU_BROWSER := ViaBrowser
+WITH_ADAWAY := false
+WITH_SHISHU_FM := true
+
+include vendor/shishu/common.mk
