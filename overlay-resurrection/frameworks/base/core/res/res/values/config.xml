@@ -80,7 +80,7 @@
     <string name="config_deviceDcDimmingSysfsNode">/sys/class/drm/card0-DSI-1/dimlayer_bl_en</string>
 
     <!-- Default fod pressed icon -->
-    <integer name="config_pressed_fod_icon">2</integer>
+    <integer name="config_pressed_fod_icon">3</integer>
 
     <bool name="config_powermenuadvanceddefault">true</bool>
 
