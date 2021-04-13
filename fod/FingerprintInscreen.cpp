@@ -18,7 +18,6 @@
 
 #include "FingerprintInscreen.h"
 #include <android-base/logging.h>
-#include <android-base/properties.h>
 #include <hidl/HidlTransportSupport.h>
 #include <fstream>
 
@@ -34,12 +33,6 @@
 #define OP_DISPLAY_AOD_MODE 8
 #define OP_DISPLAY_NOTIFY_PRESS 9
 #define OP_DISPLAY_SET_DIM 10
-
-#define FOD_POS_X "ro.fod.pos.x"
-#define FOD_POS_Y "ro.fod.pos.y"
-#define FOD_SIZE "ro.fod.size"
-
-using android::base::GetProperty;
 
 namespace vendor {
 namespace lineage {
@@ -190,21 +183,15 @@ Return<void> FingerprintInscreen::setCallback(const sp<IFingerprintInscreenCallb
 }
 
 Return<int32_t> FingerprintInscreen::getPositionX() {
-    std::string str_fodPosX = GetProperty(FOD_POS_X, "");
-    int i_fodPosX = std::stoi (str_fodPosX);
-    return i_fodPosX;
+    return FOD_POS_X;
 }
 
 Return<int32_t> FingerprintInscreen::getPositionY() {
-    std::string str_fodPosY = GetProperty(FOD_POS_Y, "");
-    int i_fodPosY = std::stoi (str_fodPosY);
-    return i_fodPosY;
+    return FOD_POS_Y;
 }
 
 Return<int32_t> FingerprintInscreen::getSize() {
-    std::string str_fodSize = GetProperty(FOD_SIZE, "");
-    int i_fodSize = std::stoi (str_fodSize);
-    return i_fodSize;
+    return FOD_SIZE;
 }
 
 }  // namespace implementation

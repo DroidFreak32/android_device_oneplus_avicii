@@ -14,7 +14,7 @@ func fodFlags(ctx android.BaseContext) []string {
     var posY = strings.TrimSpace(config.String("POS_Y"))
     var size = strings.TrimSpace(config.String("SIZE"))
 
-    cflags = append(cflags, "-DFODD_POS_X=" + posX, "-DFODD_POS_Y=" + posY, "-DFODD_SIZE=" + size)
+    cflags = append(cflags, "-DFOD_POS_X=" + posX, "-DFOD_POS_Y=" + posY, "-DFOD_SIZE=" + size)
     return cflags
 }
 
